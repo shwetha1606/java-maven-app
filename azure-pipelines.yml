@@ -20,8 +20,8 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    - task: Maven@4
-      inputs:
+  task: Maven@4
+  inputs:
         mavenPomFile: 'pom.xml'
         goals: 'build'
         publishJUnitResults: true
